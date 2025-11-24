@@ -1,6 +1,6 @@
 <?php
 include 'fungsi.php';
-
+echo password_hash("satu",PASSWORD_DEFAULT);
 if (isLoggedIn()) {
     header("Location: index.php");
     exit();
@@ -48,3 +48,4 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 </body>
 </html>
+
